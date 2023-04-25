@@ -13,7 +13,7 @@ def dissident(jorney):
             jorney[i] = random.randint(1,2)
     return jorney
 
-jorney = [random.randint(minn,maxx) for i in range(5,20)]
+jorney = [random.randint(minn:= prompt, maxx:= prompt) for i in range(5,20)]
 print(jorney)
 new_jorney = dissident(jorney)
 print(jorney)
