@@ -9,11 +9,9 @@ def prompt(msg):
 
 def dissident(jorney):
     for i in range(len(jorney)):
-        if jorney[i] >= 4:
+        if jorney[i] == max(jorney) or jorney[i] == (max(jorney)-1):
             jorney[i] = random.randint(1,2)
     return jorney
-
-maximal
 
 jorney = [random.randint(minn,maxx) for i in range(5,20)]
 print(jorney)

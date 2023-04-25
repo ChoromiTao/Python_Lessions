@@ -4,10 +4,11 @@
 number = int(input("Введите число: "))
 my_str = "number"
 
-def Reverse(number):
-    if len(s) == 1:
-        return s
-    return s[-1] + Reverse(number-1)
+def Reverse(text: str):
+    if len(text) == 1:
+        return text
+    return text[-1] + Reverse(text[:-1])
+# есть фича: вмест всех строчек: return ('1' if n ==1 else f'{text} -> {Reverse(text[:-1])}')
 
-my_str += Reverse(number)
-print(my_str)
+my_str = input('Введите строку: ')
+print(Reverse(my_str))
